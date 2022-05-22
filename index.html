@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Perks of Web Programming</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="app" type="text/javascript" href="app.js" />
+	<link href="http://fonts.cdnfonts.com/css/glacial-indifference-2"rel="stylesheet">
+	<style>
+		@import url('http://fonts.cdnfonts.com/css/glacial-indifference-2');
+	</style>
+</head>
+<body>
+	<header>
+		<a href="#" class="logo">Programming</a>
+		<ul>
+			<li><a href="#" class="active">Home</a></li>
+			<li><a href="index2.html">Our Reasons</a></li>
+			<li><a href="index3.html">Your Reasons</a></li>
+		</ul>
+	</header>
+	
+	<section>
+		<img src="Images/laptop-vector.png" id="laptop">
+		<h2 id="text">Perks of Web Programming</h2>
+		<a href="index2.html" id="btn">Read More</a>
+	</section>
+	
+	<script>
+	let text = document.getElementById('text');
+	let btn_submit = document.getElementById('btn');
+	let header = document.querySelector('header');
+	window.addEventListener('scroll', function(){
+		let value = window.scrollY;
+		text.style.marginTop = value * 0.4 + 'px';
+		header.style.top = value * 0.5 + 'px';
+		btn.style.marginTop = value * 0.4 + 'px';
+	})
+	</script>
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="app.js" type="text/javascript"></script>
+	
+
+	
+	
+
+<script src="fslightbox.min.js"></script>
+</body>
+</html>

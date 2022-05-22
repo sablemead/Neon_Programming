@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Perks of Web Programming</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="form" type="text/php" href="sendMail.php" />
+	<link href="http://fonts.cdnfonts.com/css/glacial-indifference-2"rel="stylesheet">
+	<style>
+		@import url('http://fonts.cdnfonts.com/css/glacial-indifference-2');
+		<?php include 'sendMail.php';?>
+	</style>
+	
+</head>
+<body>
+<header>
+		<a href="#" class="logo">Programming</a>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="index2.html">Our Reasons</a></li>
+			<li><a href="#" class="active" >Your Reasons</a></li>
+		</ul>
+	</header>
+	<section>
+	<h3>Or how you can create forms and tables!<br>It is fun customizing and creating things.<br>It's like you're the author!</h3><br>
+	<img src="Images/banner2.png" id="banner2">
+	<div class="rows">
+	<div class="sec" id="sec">
+			<div class="col-1">
+	<h1>You can create fun forms</h1>
+		<form id="contact" action="" method="post">
+			<input required type="text" name="superhero"
+			placeholder="Favorite superhero?">
+	<br>
+			<input required type="text" name="dessert"
+			placeholder="Favorite ice cream?">
+	<br>
+			<input required type="text" name="food"
+			placeholder="Hot dogs or hamburgers?">
+	<br>
+			<input required type+"email" name="email" placeholder="Your email?">
+			<p class="success"> <?php echo $success; ?></p>
+			<p class="failed"> <?php echo $failed; ?></p>
+	<br>
+	
+			<button type="submit" name="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+	</form>
+	        </div>
+	</div>  
+</div>
+</div>
+			<div class="col-2">
+			<h3>Or make a table rating Marvel characters!</h3><br>
+			<div id="table">
+			<p>
+			<table>
+			<tr>
+				<th>Best!</th>
+				<th>Better</th>
+				<th>Good</th>
+			</tr>
+			<tr>
+				<td>Doctor Strange</td>
+				<td>Loki</td>
+				<td>Captain America</td>
+			</tr>
+			<tr>
+				<td>Spiderman</td>
+				<td>Hulk</td>
+				<td>Black Widow</td>
+			</tr>
+			<tr>
+				<td>Ant Man</td>
+				<td>Wanda</td>
+				<td>Iron Man</td>
+			</tr>
+			<tr>
+				<td>Groot</td>
+				<td>Wong</td>
+				<td>Thor</td>
+			</tr>
+			
+			<style>
+		table { margin: auto;
+				align: center;
+				color: white;
+				border: 20px solid #7144E2;
+				width: 500px; }
+		td, th { border: 1px solid #7144E2;
+				padding: 0.5em; }
+		
+		
+		</style>
+		
+			</table><br><br>
+			</p>
+			</div>
+			</div>
+		</div>
+
+
+	</section>
+	</body>
+</html>
